@@ -1,0 +1,286 @@
+body {
+    min-width: 900px;
+    background-color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 auto;
+}
+
+.header-wrap {
+    display: block;
+    position: relative;
+    height: 700px;
+    background-image: url(../img/sample2.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+}
+
+.upper {
+    position: relative;
+    display: flex;
+}
+
+#Lorem {
+    position: absolute;
+    top: 10%;
+    left: 3%;
+}
+
+#login {
+    position: absolute;
+    top: 10%;
+    right: 3%;
+}
+
+#SignUp {
+    position: absolute;
+    top: 10%;
+    right: 7%;
+}
+
+.mainHeader {
+    position: absolute;
+    left: 30%;
+    top: 35%;
+}
+
+#mainHeader {
+    font-size: 60px;
+    letter-spacing: 5px;
+}
+
+#underHeader {
+    position: absolute;
+    left: 30%;
+    top: 60%;
+}
+
+#mainHeader span {
+    font-size: 90px;
+}
+
+.mainNav {
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
+}
+
+.mainNav ul {
+    display: flex;
+    }
+
+.mainNav ul li {
+    list-style-type: none;
+    border: 2px solid;
+    padding: 20px 100px;
+    margin: 0 50px;
+    }
+
+#triangle {
+    position: relative;
+    box-sizing: border-box;
+    height: 300px;
+    background: linear-gradient(11deg, #F3F3F3 50%, #000000 50%, #000000 100%);
+}
+
+#whiteBlockText {
+    color: #FFFFFF;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    margin-left: 60%;
+}
+
+#blackBlockText {
+    position: absolute;
+    bottom: 45px;
+    left: 20px;
+    font-size: 25px;
+}
+
+#articleHeader {
+    font-size: 25px;
+    text-align: center;
+    }
+
+#article {
+    height: 30%;
+    background-color: #F3F3F3;
+}
+
+#articleWrap {
+    display: flex;
+    justify-content: space-around;
+    padding: 1% 2%;
+}
+
+#firstArticle {
+    box-sizing: border-box;
+    width: 45%;
+    text-align: center;
+}
+
+#secondArticle {
+    box-sizing: border-box;
+    width: 45%;
+    text-align: center;
+}
+
+#firstArticle img {
+    width: 95%;
+}
+
+#secondArticle img {
+    width: 95%;
+}
+
+.article1 {
+    position: relative;
+    z-index: 1;
+    color: #FFFFFF;
+}
+
+.article1 .heart {
+    position: absolute;
+    z-index: 2;
+    width: 50px;
+    top: 2%;
+    right: 3%;
+    }
+
+.article1 .date {
+    position: absolute;
+    z-index: 2;
+    bottom: 2%;
+    left: 3%;
+}
+
+#blocks {
+    height: 20%;
+    }
+
+#photoBlocks {
+    display: flex;
+    justify-content: space-around;
+    color: #FFFFFF;
+}
+
+#explore1 {
+    width: 300px;
+    height: 450px;
+    background-image: url(../img/news-list-1.jpg);
+    margin: 30px 0 30px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#explore2 {
+    width: 300px;
+    height: 450px;
+    background-image: url(../img/news-list-2.jpg);
+    margin: 30px 0 30px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#explore3 {
+    width: 300px;
+    height: 450px;
+    background-image: url(../img/news-list-3.jpg);
+    margin: 30px 0 30px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#explore4 {
+    width: 300px;
+    height: 450px;
+    background-image: url(../img/news-list-4.jpg);
+    margin: 30px 50px 30px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.date {
+    margin-left: 15px;
+}
+
+.heart {
+    align-self: flex-end;
+    border: 2px solid;
+    padding: 7px;
+    margin-right: 20px;
+    background-color: rgb(0, 0, 0, 0.3)
+}
+
+p a {
+    background-color: rgb(9, 119, 116, 0.7);
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: none;
+    margin-left: 10%;
+    padding: 2% 25%;
+}
+
+#blocks button {
+    background-color: #097774;
+    border: none;
+    color: #FFFFFF;
+    font-size: 20px;
+    padding: 15px 95px;
+    margin: 3% 40%;
+}
+
+#form {
+    height: 8%;
+    background-color: #F3F3F3;
+    padding: 4% 2%;
+}
+
+form {
+    text-align: right;
+    font-size: 30px;
+    }
+
+input {
+    border: 2px solid #000000;
+    font-size: 20px;
+    text-align: justify;
+    background-color: #F3F3F3;
+    padding: 15px 25px;
+    margin: 0 15px 0 15px;
+}
+
+form button {
+    background-color: #097774;
+    border: none;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 15px 25px;
+}
+
+footer {
+    height: 2%;
+    display: flex;
+    flex-direction: row;
+}
+
+footer p {
+    color: #9E9E9E;
+    margin-right: 68%;
+    }
+
+footer ul {
+    display: flex;
+    }
+
+footer ul li {
+    list-style-type: none;
+    padding: 0 15px 0 15px;
+    }
