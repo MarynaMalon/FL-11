@@ -1,0 +1,46 @@
+h1 {
+    color: #2FD0F8;
+    text-align: center;
+    font-weight: bold;
+}
+section {
+    margin: 0% 25%;
+}
+#newAdd {
+    width: 95%;
+    height: 30px;
+    padding: 1%;
+}
+#add {
+    position: relative;
+}
+#addButton {
+    color: lightgrey;
+    font-size: 50px;
+    position: absolute;
+    bottom: 0%;
+}
+hr {
+    height: 8px;
+    border: none;
+    background-color:#abeeff;
+}
+#list {
+    color: #2FD0F8;
+    font-weight: 600;
+    position: relative;
+}
+#deleteIcon {
+    position: absolute;
+    right: 5%;
+    font-size: 30px;
+}
+#editIcon {
+    font-size: 30px;
+}
+li {
+    list-style-type: none;
+}
+.material-icons {
+    cursor: pointer;
+}

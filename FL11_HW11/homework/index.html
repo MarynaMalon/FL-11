@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Homework 11 - TODO Cat List</title>
+  <link rel="stylesheet" href="./assets/material-icons/material-icons.css">
+  <link rel="stylesheet" href="./assets/styles.css">
+</head>
+<body>
+  <div id="root">
+    <header><h1>TODO Cat List</h1></header>
+    <section>
+      <div id="add">
+        <input type="text" id="newAdd" placeholder="Add new action">
+        <i class="material-icons" id="addButton">add_box</i>
+      </div>
+      <hr>
+      <div id="list">
+        <ul id="myList">
+        <li><input type="checkbox" class="checkIcon" onchange="checkme()">Find the cat <i onclick="editAction()" class="material-icons" id="editIcon">create</i>
+        <i onclick="deleteAction()" class="material-icons" id="deleteIcon">delete</i></li>
+        <li><input type="checkbox" class="checkIcon" onchange="checkme()">Prepare cat's carry <i onclick="editAction()" class="material-icons" id="editIcon">create</i>
+        <i onclick="deleteAction()" class="material-icons" id="deleteIcon">delete</i></li>
+        <li><input type="checkbox" class="checkIcon" onchange="checkme()">Bath a cat <i onclick="editAction()" class="material-icons" id="editIcon">create</i>
+        <i onclick="deleteAction()" class="material-icons" id="deleteIcon">delete</i></li>
+      </ul>
+      </div>
+    </section>
+  </div>
+
+  <script src="./src/app.js"></script>
+</body>
+</html>
