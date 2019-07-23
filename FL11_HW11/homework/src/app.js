@@ -13,8 +13,8 @@ function newAction() {
     if(inputValue!==''){
 
     li.innerHTML = '<input type="checkbox" class="checkIcon" onchange="checkme()">' + inputValue +
-    '<i onclick="editAction()" class="material-icons" id="editIcon">create</i>' + 
-    '<i onclick="deleteAction()" class="material-icons" id="deleteIcon">delete</i>';
+    '<span class="editIcon"><i onclick="editAction()" class="material-icons">create</i></span>' + 
+    '<span class="deleteIcon"><i onclick="deleteAction()" class="material-icons">delete</i></span>';
     let listLength = ul.getElementsByClassName('listclass').length;
     if (listLength === liMax) {
         document.getElementById('notification').innerHTML = 'Maximum item per list are created!';
@@ -37,11 +37,11 @@ for (let i = 0; i < c.length; i++) {
 }
 
 function deleteAction(){
-event.currentTarget.parentElement.remove();
+event.currentTarget.parentElement.parentElement.remove();
 }
 
 function editAction(){
- let li = event.currentTarget.parentElement;
+ let li = event.currentTarget.parentElement.parentElement;
  li.innerHTML = '<input type = "text" id = "inputTochange"><i class="material-icons" id="saveIcon">save</i>'
 
  let saveButton = document.getElementById('saveIcon');
@@ -50,11 +50,9 @@ function editAction(){
  saveButton.onclick = function(){
  let text = inputTochange.value;
  li.innerHTML = '<input type="checkbox" class="checkIcon" onchange="checkme()">' + text +
-  '<i onclick="editAction()" class="material-icons" id="editIcon">create</i>' + 
- '<i onclick="deleteAction()" class="material-icons" id="deleteIcon">delete</i>';
-
+  '<span class="editIcon"><i onclick="editAction()" class="material-icons">create</i></span>' + 
+ '<span class="deleteIcon"><i onclick="deleteAction()" class="material-icons">delete</i></span>';
  }
-
 }
 
 

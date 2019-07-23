@@ -30,12 +30,12 @@ hr {
     font-weight: 600;
     position: relative;
 }
-#deleteIcon {
+.deleteIcon {
     position: absolute;
     right: 5%;
     font-size: 30px;
 }
-#editIcon {
+.editIcon {
     font-size: 30px;
 }
 li {
