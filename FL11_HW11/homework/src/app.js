@@ -40,6 +40,23 @@ function deleteAction(){
 event.currentTarget.parentElement.remove();
 }
 
+function editAction(){
+ let li = event.currentTarget.parentElement;
+ li.innerHTML = '<input type = "text" id = "inputTochange"><i class="material-icons" id="saveIcon">save</i>'
+
+ let saveButton = document.getElementById('saveIcon');
+ let inputTochange = document.getElementById('inputTochange');
+
+ saveButton.onclick = function(){
+ let text = inputTochange.value;
+ li.innerHTML = '<input type="checkbox" class="checkIcon" onchange="checkme()">' + text +
+  '<i onclick="editAction()" class="material-icons" id="editIcon">create</i>' + 
+ '<i onclick="deleteAction()" class="material-icons" id="deleteIcon">delete</i>';
+
+ }
+
+}
+
 
 
 
