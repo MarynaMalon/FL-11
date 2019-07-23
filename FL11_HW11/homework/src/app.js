@@ -4,8 +4,6 @@ let inputValue = document.getElementById('newAdd').value;
 let ul = document.getElementById('myList');
 const liMax = 10;
 
-
-
 addButton.onclick = 
 function newAction() {
     let li = document.createElement('li');
@@ -31,13 +29,17 @@ function newAction() {
 
 function checkme() {
     let c = document.getElementsByClassName('checkIcon');
-    if (c.checked) {
-        document.getElementsByClassName('checkIcon').disabled = true;
+for (let i = 0; i < c.length; i++) {
+    if (c[i].checked) {
+        c[i].disabled = true;
     }
 }
-
-function editAction() {
-    let inputbox = Element.getElementsByTagName('input');
-    let type = document.getElementsByTagName('input').type;
-    type = 'text';
 }
+
+function deleteAction(){
+event.currentTarget.parentElement.remove();
+}
+
+
+
+
